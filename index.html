@@ -25,11 +25,6 @@ body {
   background-color: #ffffff;
 }
 
-.wrapper {
-  width: 100%;
-  padding-bottom: 60px;
-}
-
 .main {
   margin: 0 auto;
   width: 100%;
@@ -37,19 +32,6 @@ body {
   border-spacing: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #171a1b;
-}
-
-.four-columns-socials {
-  width: 70%;
-  margin: 0 auto;
-}
-.column-social {
-  display: inline;
-  margin: 0 auto;
-}
-
-.info-section td {
-  width: 300px;
 }
 
 /* media queries*/
@@ -63,6 +45,12 @@ body {
       width: 100%;
       padding: 10px 12px;
     display: block;
+  }
+  #show-when-repsonsive{
+      display: block!important;
+  }
+  #hide-when-repsonsive{
+      display: none;
   }
 }
 
@@ -142,7 +130,7 @@ body {
                              </td>
                         </tr>
                         <!-- row 2-->
-                        <tr>
+                        <tr id="hide-when-repsonsive">
                                 <td width="50%" class="text-responsive
                                 ">
                                    <table>
@@ -179,6 +167,44 @@ body {
                                     </table>
                                     </td>
                            </tr>
+                        <!-- row 2 RESPONSIVE-->
+                        <tr id="show-when-repsonsive" style="display: none;">
+                            <td width="50%" class="image-responsive"> 
+                                <table style="margin: 0 auto">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img style="width:100%" src="https://i.ibb.co/NCXZYZZ/Screenshot-2021-06-21-at-11-30-52.png" alt="Screenshot-2021-06-21-at-11-30-52" >
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </td>
+                                <td width="50%" class="text-responsive
+                                ">
+                                   <table>
+                                       <tr>
+                                           <td>
+                                               <table>
+                                                   <tr>
+                                                       <td style="padding: 0 10px">
+                                                           <br>
+                                                           <h3>Lights. Camera. Action</h3><br>
+                                                           <p>We're proud sponsors of ITV movies, so you'll catch the Volkswagen SUV range when viewing your favourite films. You van aso explore our latest SUV range on our website.</p><br>
+                                                           <p><strong><a href="https://www.volkswagen.co.uk/new.html">Explore the SUV range</a></strong></p><br>
+                                                       </td>
+                                                   </tr>
+       
+                                               </table>
+                                           </td>
+                                       </tr>
+                                   </table>
+                                </td>
+                       </tr>
                         <!-- row3-->
                         <tr>
                             <td width="50%" class="image-responsive"> 
