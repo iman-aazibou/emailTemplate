@@ -53,15 +53,16 @@ body {
 }
 
 /* media queries*/
-/*phone*/
 
-/*ipad*/
 @media (max-width: 550px) {
-  .hide-when-responsive {
-    display: none;
+  .image-responsive {
+    width: 100%;
+    display: block;
   }
-  .show-column-when-responsive {
-    display: block !important;
+  .text-responsive {
+      width: 100%;
+      padding: 10px 12px;
+    display: block;
   }
 }
 
@@ -96,12 +97,14 @@ body {
               </td>
           </tr>
           <!-- flex-->
+          
           <tr>
               <td>
                  <table id="test" style="background-color:#f8f8f8; text-align: center;" width="100%">
+                    <!-- row 1-->
                      <tr>
-                         <td width="50%"> 
-                             <table>
+                         <td width="50%" class="image-responsive"> 
+                             <table style="margin: 0 auto">
                                  <tr>
                                      <td>
                                          <table>
@@ -110,23 +113,22 @@ body {
                                                     <img width="100%" src="https://i.ibb.co/mSv1DBP/Screenshot-2021-06-21-at-11-30-37.png" alt="Screenshot-2021-06-21-at-11-30-37" >
                                                  </td>
                                              </tr>
-
                                          </table>
                                      </td>
                                  </tr>
                              </table>
                              </td>
-                             <td>
+                             <td width="50%" class="text-responsive
+                             ">
                                 <table>
                                     <tr>
-                                        <td>
-                                            <table>
-                                                <tr>
-                                                    <td>
+                                        <td class="text-responsive">
+                                            <table class="text-responsive">
+                                                <tr class="text-responsive">
+                                                    <td style="padding: 0 10px">
                                                             <h3>A very special T-Cross opportunity</h3>
                                                             <p>The new T-Cross is getting very close to launch, and your team can be among the first to drive our exciting new, compact SUV. The T-Cross is more than one thing, so it offers all the versatility your fleet needs. better still, there are 250 T-Cross First Editions available to otder now.</p>
                                                             <p><strong><a href="https://www.volkswagen.co.uk/">Keep me posted</a></strong></p>
-                                                        </div>
                                                     </td>
                                                 </tr>
     
@@ -136,14 +138,15 @@ body {
                                 </table>
                              </td>
                         </tr>
-                        <tr>
+                         <!-- row 1-->
+                        <!-- <tr>
                                 <td>
                                    <table>
                                        <tr>
                                            <td>
                                                <table>
                                                    <tr>
-                                                       <td>
+                                                       <td style="padding: 0 10px">
                                                         <h3>Lights. Camera. Action</h3>
                                                         <p>We're proud sponsors of ITV movies, so you'll catch the Volkswagen SUV range when viewing your favourite films. You van aso explore our latest SUV range on our website.</p>
                                                         <p><strong><a href="https://www.volkswagen.co.uk/new.html">Explore the SUV range</a></strong></p>
@@ -171,8 +174,9 @@ body {
                                         </tr>
                                     </table>
                                     </td>
-                           </tr>
-                           <tr>
+                           </tr> -->
+                           <!-- row 3-->
+                           <!-- <tr>
                             <td width="50%"> 
                                 <table>
                                     <tr>
@@ -195,7 +199,7 @@ body {
                                            <td>
                                                <table>
                                                    <tr>
-                                                       <td>
+                                                       <td style="padding: 0 10px">
                                                         <h3>Time for a new ID.</h3>
                                                         <p>We're just a few weeks from the launch of our new ID. hubm where you'll be able to access information on the first ever ID. electric hatchback, with an exciting pre-order opportunity coming soon. </p>
                                                         <p><strong> <a href="https://www.volkswagen.co.uk/owners-and-drivers">Find out more</a></strong></p>
@@ -208,7 +212,7 @@ body {
                                        </tr>
                                    </table>
                                 </td>
-                           </tr>
+                           </tr> -->
                 </table>
             </td>
           </tr>
@@ -219,46 +223,37 @@ body {
               </td>
           </tr>
           <!-- socials section-->
-          <tr>
-              <td style=" text-align: center; background-color: #f5f5f5">
-                  <p style="padding-top: 3vh"><strong>Like what you're seeing here?</strong></p>
+          <tr >
+              <td style=" text-align: center; background-color: #f5f5f5; padding-bottom: 20px;">
+                  <p style="padding-top: 20px"><strong>Like what you're seeing here?</strong></p>
                   <p style="width: 65%; margin: 0 auto; padding-bottom: 4vh;">Follow us on Twitter, Facebook or Instagram for our selections throughout the week.</p>
 
-                <table class="four-columns-socials" style="text-align:center; padding-bottom: 4vh;">
+                <table style="text-align:center;margin: 0 auto">
                     <tr>
                         <td>
-                            <table class="column-social">
-                                <tr>
                                     <img width="60px" src="https://i.ibb.co/pbMhmc0/facebook-logo.png" alt="facebook-logo">
-                                </tr>
-
-                            </table>
-                            <table class="column-social">
-                                <tr>
+                                    </td>
+                         
+                            
                                     <td>
                                         <img width="60x" src="https://i.ibb.co/LC0jbJm/instagram-logo.png" alt="instagram-logo">
                                     </td>
-                                </tr>
-                            </table>
-                            <table class="column-social">
-                                <tr>
+     
+    
+                         
                                     <td>
                                         <img width="60px" src="https://i.ibb.co/3cntFBH/twitter-logo.png" alt="twitter-logo">
                                     </td>
-                                </tr>
-                            </table>
-                            <table class="column-social">
-                                <tr>
+                    
+                    
                                     <td>
                                         <img width="60px" src="https://i.ibb.co/r7QzKSV/youtube-logo.png" alt="youtube-logo">
                                     </td>
-                                </tr>
+                                
                             </table>
                         </td>
                     </tr>
-
                 </table>
-
               </td>
           </tr>
       </table>
